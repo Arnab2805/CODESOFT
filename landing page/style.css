@@ -1,0 +1,235 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+      --navbar-height: 59px;
+}
+/* navigation bar */
+#navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(15, 33, 131);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 3.7;
+}
+/* navigation bar : logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50%;
+
+}
+/* navigation bar : list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    }
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: blanchedalmond;
+}
+/* Home selection */
+#home{
+    display: flex;
+    flex-direction: column ;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(bg.jpeg) no-repeat center center/cover; 
+    height: 702px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home img{
+    display: flex;
+    width: 54%;
+    opacity: 0.83;
+    border-radius: 30%;
+    
+}
+#home h1{
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+    font-size:  3.0rem;
+    
+}
+#home p{
+    color: rgb(27, 5, 87);
+    text-align: center;
+    font-size:  2.0rem;
+    font-family: 'Courgette', serif;
+    
+}
+/* Courses */
+#courses4{
+    margin: 34px;
+    height: 640px;
+    background: lightgrey;
+}
+
+#courses4 .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: gray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#courses4 .box:hover{
+    color: lightpink;
+    background-color: saddlebrown;
+}
+#courses4 .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+#courses4 .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* client section */
+#client-selection{
+    position: relative;
+}
+#client-selection::before{
+    content: "";
+    position: absolute;
+    background: url('edbg.jpeg');
+    width: 100%;
+    height: 332px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#client img{
+    height: 124px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 515px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('edu.jpeg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+}
+/* about us */
+#aboutus45{
+    display: flex;
+    flex-direction: column ;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#aboutus45 h1{
+    color: blanchedalmond;
+}
+
+#aboutus45 p{
+    color: blanchedalmond;
+}
+
+
+
+/* utility classes */
+}
+.h-secondary{
+    font-family: 'Lobster', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+#Courses{
+    display: flex;
+    flex-direction: row;
+}
+
+clients::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
